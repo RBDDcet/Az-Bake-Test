@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://github.com/rbddcet/az-bake/releases/latest/download/image.schema.json
+publisher: MyCompany
+offer: DevBox
+replicaLocations:
+- eastus
+- westus
+sku: testalphaimage
+version: 0.0.1
+os: Windows
+description: A description for TestAlphaImage
+install:
+  choco:
+    packages:
+    - id: git
+      restart: true
+    - id: googlechrome
+base:
+  publisher: microsoftwindowsdesktop
+  offer: windows-ent-cpc
+  sku: win11-22h2-ent-cpc-m365
+  version: latest
+update: true
+name: TestAlphaImage

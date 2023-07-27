@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://github.com/rbddcet/az-bake/releases/latest/download/bake.schema.json
+version: 1.0
+sandbox:
+  resourceGroup: RBNBAzBake
+  subscription: 572b41e6-5c44-486a-84d2-01d6202774ac
+  virtualNetwork: RBNBSandbox-vnet
+  virtualNetworkResourceGroup: RBNBAzBake
+  defaultSubnet: default
+  builderSubnet: builders
+  keyVault: RBNBSandbox-kv
+  storageAccount: rbnbsandboxstorage
+  identityId: /subscriptions/572b41e6-5c44-486a-84d2-01d6202774ac/resourceGroups/RBNBAzBake/providers/Microsoft.ManagedIdentity/userAssignedIdentities/RBNBSandbox-id
+  location: eastus
+gallery:
+  name: RBNBAzBakeGallery
+  resourceGroup: RBNBAzBake
+  subscription: 572b41e6-5c44-486a-84d2-01d6202774ac
