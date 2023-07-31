@@ -5,7 +5,7 @@ replicaLocations:
 - eastus
 - westus
 sku: testalphaimage
-version: 0.0.1
+version: 0.0.2
 os: Windows
 description: A description for TestAlphaImage
 install:
