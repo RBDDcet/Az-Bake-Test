@@ -31,6 +31,9 @@ jobs:
           gh release download --dir ${{ runner.temp }} --repo github.com/rbddcet/az-bake --pattern index.json
           az extension add --yes --source $(jq -r '.extensions.bake[0].downloadUrl' ${{ runner.temp }}/index.json)
 
+      - name: Test version
+        run: az bake version
+        
       - name: Run az bake
         env:
           GITHUB_TOKEN: ${{ github.token }}
